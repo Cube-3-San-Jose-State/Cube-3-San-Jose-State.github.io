@@ -1,10 +1,9 @@
 import * as React from "react"
-import Section from "../Reusables/Section/Section"
-import "./Landing.css"
+import Section from "./Reusables/Section";
 
 function Landing() {
     return (
-        <Section id="landing">
+        <Section className="bg-orange-400">
             <div>landing here</div>
         </Section>
     )

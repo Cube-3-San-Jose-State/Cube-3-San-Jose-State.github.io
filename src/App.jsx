@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "./Components/Header/Header";
-import Landing from "./Components/Landing/Landing";
-import About from './Components/About/About';
+import Header from "./components/Header";
+import Landing from "./components/Landing";
+import About from "./components/About";
 import "./App.css";
 /*
   Page diagram:
@@ -17,9 +17,9 @@ import "./App.css";
 */
 
 export default () => (
-  <>
-    <Header/>
-    <Landing/>
-    <About/>
-  </>
+    <>
+        <Header />
+        <Landing />
+        <About />
+    </>
 );
