@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    @font-face {
+        font-family: 'Gilroy-Bold';
+        font-style: normal;
+        font-weight: normal;
+        src: url(/src/assets/font/Gilroy-Bold.woff) format("woff");
+    }
+}
 body {
     margin: 0;
 }
