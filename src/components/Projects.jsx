@@ -5,7 +5,7 @@ function Projects() {
         <div className="bg-cover h-[50vh] font-[Gilroy-Bold] flex justify-center items-center text-center px-[300px] py-[50px] bg-[url(public/stock-satellite-image.jpeg)]">
             <div>
              
-                <h1 className="text-[70px] text-[#E5A823]"> 
+                <h1 className="text-[70px] text-[var(--club-yellow)]"> 
                     projects
                 </h1>
                 <p className="text-[20px] text-[white]">

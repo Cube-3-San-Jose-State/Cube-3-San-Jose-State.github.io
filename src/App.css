@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 body {
+    --background-black: #121212;
+    --club-yellow: #E5A823;
+    --club-blue: #000080;
     margin: 0;
 }
 
