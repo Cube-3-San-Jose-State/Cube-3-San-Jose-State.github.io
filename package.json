@@ -6,7 +6,8 @@
   "scripts": {
     "start": "vite",
     "preview": "vite preview",
-    "build": "vite build"
+    "build": "vite build",
+    "lint": "eslint ."
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -15,6 +16,8 @@
   "devDependencies": {
     "autoprefixer": "^10.4.14",
     "babel-preset-nano-react-app": "^0.1.0",
+    "eslint": "^8.47.0",
+    "eslint-plugin-react": "^7.33.1",
     "postcss": "^8.4.27",
     "tailwindcss": "^3.3.3",
     "vite": "^4.3.8"
