@@ -12,6 +12,8 @@
         "react"
     ],
     "rules": {
+        "react/display-name": 1,  // Warning for 'react/display-name' errors
+        "react/prop-types": 1,          // Warning for 'react/prop-types' errors
         "semi": ["error", "always"],
         "quotes": ["error", "double"]
     }
