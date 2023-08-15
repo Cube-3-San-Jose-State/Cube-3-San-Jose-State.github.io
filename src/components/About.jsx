@@ -1,9 +1,9 @@
 import * as React from "react";
 
-function About() {
+function About({refs}) {
     return (
         <div className="bg-cover h-[50vh] font-[Gilroy-Bold] flex justify-center items-center text-center px-[300px] py-[50px] bg-[url(/about-stock-image.jpeg)]">
-            <div>
+            <div ref={refs}>
                 <h1 className="text-[70px] text-[var(--club-yellow)]"> 
                     about cube<sup className="text-[35px]">3</sup>
                 </h1>
