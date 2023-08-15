@@ -11,5 +11,15 @@
     }
 }
 body {
+    --background-black: #121212;
+    --club-yellow: #E5A823;
+    --club-blue: #000080;
     margin: 0;
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gilroy-Bold'), url('fonts/Gilroy-Bold.woff') format('woff');
 }

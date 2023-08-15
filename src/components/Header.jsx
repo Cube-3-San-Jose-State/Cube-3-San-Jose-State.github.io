@@ -30,7 +30,7 @@ function Header({refs}) {
                 <span className="hover:text-blue-400 cursor-pointer" onClick={() => handleClick("contacts")}> contacts </span>
             </div>
         </div>
-    )
+    );
 }
 
 export default Header;
