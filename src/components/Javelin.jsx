@@ -1,12 +1,12 @@
 import * as React from "react";
 import Section from "./Reusables/Section";
-import background from "../assets/javelin-bg.png";
-import logo from "../assets/javelin-logo.png";
+
+import JavelinLogo from "../assets/javelin-logo.png"
 
 export default function Javelin() {
     return (
-        <Section className={`h-screen flex-col text-center gap-7 bg-[url(${background})] bg-cover bg-center`}>
-            <img className="w-[250px]" src={logo} alt="Javelin logo" />
+        <Section className={`h-screen flex-col text-center gap-7 bg-[url(./assets/javelin-bg.png)] bg-cover bg-center`}>
+            <img className="w-[250px]" src={JavelinLogo} alt="Javelin logo" />
             <div className="font-[Gilroy-Bold] text-6xl font-bold text-white">JAVELIN</div>
             <div className="font-[Gilroy-Bold] text-xl w-1/2 text-white">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente mollitia animi, 
