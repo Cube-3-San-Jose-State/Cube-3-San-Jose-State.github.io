@@ -30,9 +30,9 @@ const refs = {aboutRef,projectRef,javelinRef,contactsRef};
 export default () => (
     <>
         <Header refs = {refs}/>
-        <Landing refs = {refs.projectRef}/>
+        <Landing />
         <About refs = {refs.aboutRef}/>
-        <Projects />
+        <Projects refs = {refs.projectRef}/>
         <Javelin />
     </>
 );
