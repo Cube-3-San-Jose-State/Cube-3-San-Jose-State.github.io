@@ -5,6 +5,21 @@ module.exports = {
     ],
     theme: {
         extend: {
+            animation: {
+                fade: "fadeIn .5s ease-in-out"
+            },
+            keyframes: theme => ({
+                fadeIn: {
+                    "0%": {
+                        opacity: "25%",
+                        transform: "translateY(1em)"
+                    },
+                    "100%": {
+                        opacity: "100%",
+                        transform: "translateY(0em)"
+                    }
+                }
+            }),
             fontFamily: {
                 "gilroy": ["Gilroy-Bold"]
             },
