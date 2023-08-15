@@ -15,7 +15,7 @@ function Header({refs}) {
         else if (refName == "contacts"){
             refs.contacts.current.scrollIntoView({behavior: "smooth"});
         }
-    }
+    };
 
     return (
         <div className="flex fixed top-0 left-0 right-0 h-[10vh] z-[1] justify-between font-gilroy text-club-yellow">
@@ -32,5 +32,6 @@ function Header({refs}) {
         </div>
     );
 }
+
 
 export default Header;

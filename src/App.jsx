@@ -25,7 +25,7 @@ const aboutRef = React.createRef();
 const projectRef = React.createRef();
 const javelinRef = React.createRef();
 const contactsRef = React.createRef();
-const refs = {aboutRef,projectRef,javelinRef,contactsRef}
+const refs = {aboutRef,projectRef,javelinRef,contactsRef};
 
 export default () => (
     <>
