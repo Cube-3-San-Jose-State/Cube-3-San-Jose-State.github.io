@@ -3,7 +3,7 @@ import Section from "./Reusables/Section";
 
 function Landing() {
     return (
-        <Section className="bg-orange-400">
+        <Section className="bg-orange-400 h-screen">
             <div>landing here</div>
         </Section>
     );
