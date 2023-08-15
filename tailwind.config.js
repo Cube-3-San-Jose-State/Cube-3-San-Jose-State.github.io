@@ -6,10 +6,10 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                'gilroy': ['Gilroy-Bold']
+                "gilroy": ["Gilroy-Bold"]
             },
             colors: {
-                'club-yellow': "#E5A823"
+                "club-yellow": "#E5A823"
             },
         },
     },
