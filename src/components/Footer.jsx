@@ -1,5 +1,5 @@
-import * as React from 'react';
-import gear from '../assets/gear.png';
+import * as React from "react";
+import gear from "../assets/gear.png";
 
 export default function Footer() {
     return (
@@ -23,5 +23,5 @@ export default function Footer() {
                 </div>
             </div>
         </div>
-    )
+    );
 }
