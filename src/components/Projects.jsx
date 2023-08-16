@@ -4,7 +4,7 @@ import Section from "./Reusables/Section";
 
 function Projects() {
     return (
-        <Section className={`h-[50vh] flex-col text-center gap-7 bg-[url(./assets/stock-satellite-image.jpeg)] bg-cover bg-center`}>
+        <Section className={"h-[50vh] flex-col text-center gap-7 bg-[url(./assets/stock-satellite-image.jpeg)] bg-cover bg-center"}>
             <div className="font-[Gilroy-Bold] text-[var(--club-yellow)] text-6xl font-bold">projects</div>
             <div className="font-[Gilroy-Bold] text-xl w-1/2 text-white">
                 Explore a realm of limitless possibilities with SJSU Cube3 projects.Venture into the universe of miniature satellites 
