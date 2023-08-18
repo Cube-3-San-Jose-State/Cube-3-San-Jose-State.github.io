@@ -1,9 +1,9 @@
 import * as React from "react";
 import gear from "../assets/gear.png";
 
-export default function Footer() {
+export default function Footer({ refs }) {
     return (
-        <div className='flex w-full h-[30vh] bg-club-yellow'>
+        <div className='flex w-full h-[30vh] bg-club-yellow' ref={refs}>
             <div className='flex-1'>
                 <div className='ml-20 mt-10 text-5xl font-gilroy block'>contact us</div>
                 <a className='ml-40 mt-5 text-2xl font-gilroy block' href="mailto:shannonkyle.deleon@gmail.com">President - Kyle Deleon: shannonkyle.deleon@gmail.com</a>
