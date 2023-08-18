@@ -3,7 +3,7 @@ import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 import Section from "./Reusables/Section";
-import background from "../assets/landing-bg.png";
+import IMAGES from "../assets/images/images";
 
 
 function Landing() {
@@ -79,11 +79,11 @@ function Landing() {
 
     return (
         <Section>
-            <img src={background} className="w-2/5 z-10 absolute right-0 animate-fade pointer-events-none" alt="" />
-            <Particles className="w-full h-full" init={particlesInit} options={particlesOptions} />
-            <h1 className="font-[Gilroy-Bold] text-[5vw] text-[var(--club-yellow)] leading-tight left-[7vw] absolute animate-fade">
-                cube satellites <br />
-                & small spacecrafts <br />
+            <img src={IMAGES.landingBackground} className="w-2/5 z-10 absolute right-0 animate-fade" alt="" />
+            <Particles className="w-full h-full" init={particlesInit} loaded={particlesLoaded} options={particlesOptions}/>
+            <h1 className="font-gilroy text-[5vw] text-[var(--club-yellow)] leading-tight left-[7vw] absolute animate-fade">
+                cube satellites <br/>
+                & small spacecrafts <br/>
                 @ san jose state
             </h1>
         </Section>

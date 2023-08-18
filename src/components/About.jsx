@@ -1,8 +1,10 @@
 import * as React from "react";
+import Section from "./Reusables/Section";
+import IMAGES from "../assets/images/images";
 
 function About({refs}) {
     return (
-        <div className="bg-cover h-[50vh] font-[Gilroy-Bold] flex justify-center items-center text-center px-[300px] py-[50px] bg-[url(/about-stock-image.jpeg)]">
+        <Section className={"!h-[50vh] font-gilroy text-center px-[300px] py-[50px]"} style={{ background: `url(${IMAGES.aboutBackground}) no-repeat center`, backgroundSize: "cover" }}>
             <div ref={refs}>
                 <h1 className="text-[70px] text-[var(--club-yellow)]"> 
                     about cube<sup className="text-[35px]">3</sup>
@@ -20,7 +22,7 @@ function About({refs}) {
                     explored to its fullest potential.
                 </p>
             </div>
-        </div>
+        </Section>
     );
 }
 
