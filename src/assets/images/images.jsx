@@ -4,6 +4,6 @@ const IMAGES = {
     projectBackground : new URL("./project-bg.png", import.meta.url).href,
     javelinBackground : new URL("./javelin-bg.png", import.meta.url).href,
     landingBackground : new URL("./landing-bg.png", import.meta.url).href,
-    javelinLogo : new URL("./javelin-logo.png", import.meta.url).href,
+    javelinLogo : new URL("./javelin-logo.svg", import.meta.url).href,
 };
 export default IMAGES;
