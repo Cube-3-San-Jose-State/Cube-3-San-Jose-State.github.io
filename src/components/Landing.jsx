@@ -85,7 +85,7 @@ function Landing({refs}) {
         <Section>
             <img src={IMAGES.landingBackground} className="w-2/5 z-10 absolute right-0 animate-fade" alt="" />
             <Particles className="w-full h-full" init={particlesInit} loaded={particlesLoaded} options={particlesOptions}/>
-            <h1 className="font-[Gilroy-Bold] text-[5vw] text-[var(--club-yellow)] leading-tight left-[7vw] absolute animate-fade">
+            <h1 className="font-gilroy text-[5vw] text-[var(--club-yellow)] leading-tight left-[7vw] absolute animate-fade">
                 cube satellites <br/>
                 & small spacecrafts <br/>
                 @ san jose state

@@ -4,7 +4,7 @@ import IMAGES from "../assets/images/images";
 
 function Projects() {
     return (
-        <Section className={"!h-[50vh] font-[Gilroy-Bold] text-center px-[300px] py-[50px]"}  style={{ background: `url(${IMAGES.projectBackground}) no-repeat center`, backgroundSize: "cover" }}>
+        <Section className={"!h-[50vh] font-gilroy text-center px-[300px] py-[50px]"}  style={{ background: `url(${IMAGES.projectBackground}) no-repeat center`, backgroundSize: "cover" }}>
             <div>
                 <h1 className="text-[70px] text-[var(--club-yellow)]"> 
                     projects
