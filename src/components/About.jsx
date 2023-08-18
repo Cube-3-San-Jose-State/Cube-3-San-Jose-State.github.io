@@ -1,9 +1,10 @@
 import * as React from "react";
+import Section from "./Reusables/Section";
 
-function About({refs}) {
+function About(props, ref) {
     return (
-        <div className="bg-cover h-[50vh] font-[Gilroy-Bold] flex justify-center items-center text-center px-[300px] py-[50px] bg-[url(/about-stock-image.jpeg)]">
-            <div ref={refs}>
+        <Section ref={ref} className="bg-cover h-[50vh] font-[Gilroy-Bold] text-center bg-[url(/about-stock-image.jpeg)]">
+            <div className="w-[55vw]">
                 <h1 className="text-[70px] text-[var(--club-yellow)]"> 
                     about cube<sup className="text-[35px]">3</sup>
                 </h1>
@@ -20,8 +21,8 @@ function About({refs}) {
                     explored to its fullest potential.
                 </p>
             </div>
-        </div>
+        </Section>
     );
 }
 
-export default About;
+export default React.forwardRef(About);

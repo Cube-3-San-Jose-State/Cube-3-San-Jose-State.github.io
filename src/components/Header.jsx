@@ -1,5 +1,5 @@
 import * as React from "react";
-import IMAGES from "../assets/images/images";
+import logo from "../assets/club-logo.png";
 
 function Header({refs}) {
     const handleClick = (refName) => {
@@ -7,10 +7,10 @@ function Header({refs}) {
             refs.aboutRef.current.scrollIntoView({behavior: "smooth"});
         }
         else if (refName == "projects"){ 
-            refs.landingRef.current.scrollIntoView({behavior: "smooth"});
+            refs.projectsRef.current.scrollIntoView({behavior: "smooth"});
         }
         else if (refName == "JAVELIN"){
-            refs.javelin.current.scrollIntoView({behavior: "smooth"});
+            refs.javelinRef.current.scrollIntoView({behavior: "smooth"});
         }
         else if (refName == "contacts"){
             refs.contacts.current.scrollIntoView({behavior: "smooth"});
@@ -18,16 +18,17 @@ function Header({refs}) {
     };
 
     return (
-        <div className="flex fixed top-0 left-0 right-0 h-[10vh] z-[1] justify-between font-gilroy text-club-yellow">
-            <div className="flex justify-start pl-5 pt-1 space-x-2">
-                <img src={IMAGES.image1} alt='first image'/>
-                <h1 className="pt-2 text-2xl">Cube<sup>3</sup></h1>
+        <div className="flex fixed top-0 left-0 right-0 h-[10vh] z-[50] justify-between font-gilroy text-club-yellow items-center">
+            <div className="flex items-center ml-[2vw] mt-[1vw] float-left">
+                <img className="h-[8vh] mr-[1vw]" src={logo} alt="club logo"/>
+                <h1 className="text-5xl">Cube<sup>3</sup></h1>
             </div>
-            <div className="pr-2 bottom-0 pt-3 inline-block align-top">
-                <span className="hover:text-blue-400 cursor-pointer" onClick={() => handleClick("about")}>about </span>|
-                <span className="hover:text-blue-400 cursor-pointer" onClick={() => handleClick("projects")}> projects </span>|
-                <span className="hover:text-blue-400 cursor-pointer" onClick={() => handleClick("JAVELIN")}> JAVELIN </span>|
-                <span className="hover:text-blue-400 cursor-pointer" onClick={() => handleClick("contacts")}> contacts </span>
+            
+            <div className="mr-[1vw]">
+                <span className="hover:text-club-blue-light cursor-pointer" onClick={() => handleClick("about")}>about </span>|
+                <span className="hover:text-club-blue-light cursor-pointer" onClick={() => handleClick("projects")}> projects </span>|
+                <span className="hover:text-club-blue-light cursor-pointer" onClick={() => handleClick("JAVELIN")}> JAVELIN </span>|
+                <span className="hover:text-club-blue-light cursor-pointer" onClick={() => handleClick("contacts")}> contact </span>
             </div>
         </div>
     );

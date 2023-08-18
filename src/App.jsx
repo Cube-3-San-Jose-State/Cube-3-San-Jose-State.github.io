@@ -22,17 +22,17 @@ import "./App.css";
     Implemented this way to access different elements across components
 */
 const aboutRef = React.createRef();
-const projectRef = React.createRef();
+const projectsRef = React.createRef();
 const javelinRef = React.createRef();
 const contactsRef = React.createRef();
-const refs = {aboutRef,projectRef,javelinRef,contactsRef};
+const refs = {aboutRef, projectsRef, javelinRef, contactsRef};
 
 export default () => (
     <>
         <Header refs = {refs}/>
-        <Landing />
-        <About refs = {refs.aboutRef}/>
-        <Projects refs = {refs.projectRef}/>
-        <Javelin />
+        <Landing/>
+        <About ref = {aboutRef}/>
+        <Projects ref = {projectsRef}/>
+        <Javelin ref = {javelinRef}/>
     </>
 );

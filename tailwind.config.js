@@ -24,7 +24,9 @@ module.exports = {
                 "gilroy": ["Gilroy-Bold"]
             },
             colors: {
-                "club-yellow": "#E5A823"
+                "club-yellow": "#E5A823",
+                "club-blue": "#000080",
+                "club-blue-light": "#006AB0"
             },
         },
     },

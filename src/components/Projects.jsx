@@ -1,10 +1,10 @@
 import * as React from "react";
+import Section from "./Reusables/Section";
 
-function Projects() {
+function Projects(props, ref) {
     return (
-        <div className="bg-cover h-[50vh] font-[Gilroy-Bold] flex justify-center items-center text-center px-[300px] py-[50px] bg-[url(public/stock-satellite-image.jpeg)]">
-            <div>
-             
+        <Section ref={ref} className="bg-cover h-[50vh] font-[Gilroy-Bold] text-center bg-[url(public/stock-satellite-image.jpeg)]">
+            <div className="w-[55vw]">
                 <h1 className="text-[70px] text-[var(--club-yellow)]"> 
                     projects
                 </h1>
@@ -16,8 +16,8 @@ function Projects() {
                     that observes volcanic activity near Popocatépetl. 
                 </p>
             </div>
-        </div>
+        </Section>
     );
 }
 
-export default Projects;
+export default React.forwardRef(Projects);
