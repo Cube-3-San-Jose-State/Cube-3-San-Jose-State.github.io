@@ -3,7 +3,7 @@ import Section from "./Reusables/Section";
 import background from "../assets/javelin-bg.png";
 import logo from "../assets/javelin-logo.png";
 
-export default function Javelin({ refs }) {
+function Javelin({ refs }) {
     return (
         <Section className="flex-col text-center gap-7" style={{ background: `url(${background}) no-repeat center`, backgroundSize: "cover" }}>
             <img className="w-[250px]" src={logo} alt="Javelin logo" />
@@ -13,3 +13,5 @@ export default function Javelin({ refs }) {
         </Section>
     );
 }
+
+export default Javelin;

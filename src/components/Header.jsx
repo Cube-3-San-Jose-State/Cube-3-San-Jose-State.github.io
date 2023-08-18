@@ -1,7 +1,7 @@
 import * as React from "react";
 import IMAGES from "../assets/images/images";
 
-export default function Header({ refs }) {
+function Header({ refs }) {
     return (
         <div className="flex fixed top-0 left-0 right-0 h-[10vh] z-[1] justify-between font-gilroy text-club-yellow">
             <div className="flex justify-start pl-5 pt-1 space-x-2">
@@ -17,3 +17,5 @@ export default function Header({ refs }) {
         </div>
     );
 }
+
+export default Header;

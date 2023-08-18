@@ -1,7 +1,7 @@
 import * as React from "react";
 import gear from "../assets/gear.png";
 
-export default function Footer({ refs }) {
+function Footer({ refs }) {
     return (
         <div className='flex w-full h-[30vh] bg-club-yellow' ref={refs}>
             <div className='flex-1'>
@@ -25,3 +25,5 @@ export default function Footer({ refs }) {
         </div>
     );
 }
+
+export default Footer;

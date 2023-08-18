@@ -29,8 +29,7 @@ const javelinRef = React.createRef();
 const contactsRef = React.createRef();
 const refs = { aboutRef, projectRef, javelinRef, contactsRef };
 
-export default function App() {
-
+function App() {
     return (
         <>
             <Header refs={refs} />
@@ -42,3 +41,5 @@ export default function App() {
         </>
     );
 }
+
+export default App;
