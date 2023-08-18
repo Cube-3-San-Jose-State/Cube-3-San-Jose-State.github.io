@@ -30,10 +30,10 @@ const refs = { aboutRef, projectRef, javelinRef, contactsRef };
 
 export default () => (
     <>
-        <Header refs={refs} />
-        <Landing refs={refs.projectRef} />
-        <About refs={refs.aboutRef} />
-        <Projects />
+        <Header refs = {refs}/>
+        <Landing />
+        <About refs = {refs.aboutRef}/>
+        <Projects refs = {refs.projectRef}/>
         <Javelin />
         <Footer />
     </>
