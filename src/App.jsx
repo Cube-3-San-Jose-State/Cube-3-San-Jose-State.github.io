@@ -4,6 +4,7 @@ import Landing from "./components/Landing";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Javelin from "./components/Javelin";
+import Footer from "./components/Footer";
 import "./App.css";
 /*
   Page diagram:
@@ -25,7 +26,7 @@ const aboutRef = React.createRef();
 const projectRef = React.createRef();
 const javelinRef = React.createRef();
 const contactsRef = React.createRef();
-const refs = {aboutRef,projectRef,javelinRef,contactsRef};
+const refs = { aboutRef, projectRef, javelinRef, contactsRef };
 
 export default () => (
     <>
@@ -34,5 +35,6 @@ export default () => (
         <About refs = {refs.aboutRef}/>
         <Projects refs = {refs.projectRef}/>
         <Javelin />
+        <Footer />
     </>
 );
