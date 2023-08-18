@@ -1,9 +1,10 @@
 import * as React from "react";
 import gear from "../assets/gear.png";
+import Section from "./Reusables/Section";
 
-function Footer({ refs }) {
+function Footer(props, ref) {
     return (
-        <div className='flex w-full h-[30vh] bg-club-yellow' ref={refs}>
+        <Section className='flex w-full h-[30vh] bg-club-yellow' ref={ref}>
             <div className='flex-1'>
                 <div className='ml-20 mt-10 text-5xl font-gilroy block'>contact us</div>
                 <a className='ml-40 mt-5 text-2xl font-gilroy block' href="mailto:shannonkyle.deleon@gmail.com">President - Kyle Deleon: shannonkyle.deleon@gmail.com</a>
@@ -22,8 +23,8 @@ function Footer({ refs }) {
                     </a>
                 </div>
             </div>
-        </div>
+        </Section>
     );
 }
 
-export default Footer;
+export default React.forwardRef(Footer);

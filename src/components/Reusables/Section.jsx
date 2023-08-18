@@ -1,11 +1,11 @@
 import * as React from "react";
 
-function Section({ className, children, style, refs }) {
+function Section(props, ref) {
     return (
-        <div className={`w-full h-screen flex justify-center items-center z-50 ${className}`} style={style} ref={refs}>
-            {children}
+        <div className={`w-full flex justify-center items-center z-50 ${props.className}`} style={props.style} ref={ref}>
+            {props.children}
         </div>
     );
 }
 
-export default Section;
+export default React.forwardRef(Section);

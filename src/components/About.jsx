@@ -2,9 +2,9 @@ import * as React from "react";
 import Section from "./Reusables/Section";
 import IMAGES from "../assets/images/images";
 
-function About({ refs }) {
+function About(props, ref) {
     return (
-        <Section className={"!h-[50vh] font-gilroy text-center px-[300px] py-[50px]"} style={{ background: `url(${IMAGES.aboutBackground}) no-repeat center`, backgroundSize: "cover" }} refs={refs}>
+        <Section className={"h-[50vh] font-gilroy text-center px-[300px] py-[50px]"} style={{ background: `url(${IMAGES.aboutBackground}) no-repeat center`, backgroundSize: "cover" }} ref={ref}>
             <div>
                 <h1 className="text-[70px] text-[var(--club-yellow)]">
                     about cube<sup className="text-[35px]">3</sup>
@@ -26,4 +26,4 @@ function About({ refs }) {
     );
 }
 
-export default About;
+export default React.forwardRef(About);

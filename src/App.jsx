@@ -26,18 +26,18 @@ import "./App.css";
 const aboutRef = React.createRef();
 const projectRef = React.createRef();
 const javelinRef = React.createRef();
-const contactsRef = React.createRef();
-const refs = { aboutRef, projectRef, javelinRef, contactsRef };
+const contactRef = React.createRef();
+const refs = { aboutRef, projectRef, javelinRef, contactRef };
 
 function App() {
     return (
         <>
             <Header refs={refs} />
             <Landing />
-            <About refs={refs.aboutRef} />
-            <Projects refs={refs.projectRef} />
-            <Javelin refs={refs.javelinRef} />
-            <Footer refs={refs.contactsRef} />
+            <About ref={aboutRef} />
+            <Projects ref={projectRef} />
+            <Javelin ref={javelinRef} />
+            <Footer ref={contactRef} />
         </>
     );
 }

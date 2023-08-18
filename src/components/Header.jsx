@@ -3,16 +3,16 @@ import IMAGES from "../assets/images/images";
 
 function Header({ refs }) {
     return (
-        <div className="flex fixed top-0 left-0 right-0 h-[10vh] z-[1] justify-between font-gilroy text-club-yellow">
-            <div className="flex justify-start pl-5 pt-1 space-x-2">
-                <img src={IMAGES.cubeLogo} alt='first image'/>
-                <h1 className="pt-2 text-2xl">Cube<sup>3</sup></h1>
+        <div className="flex fixed top-0 left-0 right-0 h-[10vh] z-[1] justify-between items-center font-gilroy text-club-yellow">
+            <div className="flex items-center ml-[2vw] mt-[1vw] float-left">
+                <img src={IMAGES.cubeLogo} className="h-[8vh] mr-[1vw]" alt="club logo"/>
+                <h1 className="text-5xl">Cube<sup>3</sup></h1>
             </div>
-            <div className="pr-2 bottom-0 pt-3 inline-block align-top">
-                <span className="hover:text-blue-400 cursor-pointer" onClick={() => refs.aboutRef.current.scrollIntoView({ behavior: "smooth" })}>about </span>|
-                <span className="hover:text-blue-400 cursor-pointer" onClick={() => refs.projectRef.current.scrollIntoView({ behavior: "smooth" })}> projects </span>|
-                <span className="hover:text-blue-400 cursor-pointer" onClick={() => refs.javelinRef.current.scrollIntoView({ behavior: "smooth" })}> JAVELIN </span>|
-                <span className="hover:text-blue-400 cursor-pointer" onClick={() => refs.contactsRef.current.scrollIntoView({ behavior: "smooth" })}> contacts </span>
+            <div className="mr-[1vw]">
+                <span className="hover:text-club-blue-light cursor-pointer" onClick={() => refs.aboutRef.current.scrollIntoView({ behavior: "smooth" })}>about </span>|
+                <span className="hover:text-club-blue-light cursor-pointer" onClick={() => refs.projectRef.current.scrollIntoView({ behavior: "smooth" })}> projects </span>|
+                <span className="hover:text-club-blue-light cursor-pointer" onClick={() => refs.javelinRef.current.scrollIntoView({ behavior: "smooth" })}> JAVELIN </span>|
+                <span className="hover:text-club-blue-light cursor-pointer" onClick={() => refs.contactRef.current.scrollIntoView({ behavior: "smooth" })}> contact </span>
             </div>
         </div>
     );
