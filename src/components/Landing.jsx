@@ -6,13 +6,9 @@ import Section from "./Reusables/Section";
 import IMAGES from "../assets/images/images";
 
 
-function Landing({refs}) {
+function Landing() {
     const particlesInit = useCallback(async engine => {
         await loadSlim(engine);
-    }, []);
-
-    const particlesLoaded = useCallback(async container => {
-        await console.log(container);
     }, []);
 
     const particlesOptions = {

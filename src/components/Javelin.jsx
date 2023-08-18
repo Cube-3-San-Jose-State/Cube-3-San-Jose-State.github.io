@@ -2,7 +2,7 @@ import * as React from "react";
 import Section from "./Reusables/Section";
 import IMAGES from "../assets/images/images";
 
-function Javelin() {
+function Javelin({ refs }) {
     return (
         <Section className="flex-col text-center gap-7" style={{ background: `url(${IMAGES.javelinBackground}) no-repeat center`, backgroundSize: "cover" }}>
             <img className="w-[250px]" src={IMAGES.javelinLogo} alt="Javelin logo" />

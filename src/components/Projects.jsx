@@ -2,7 +2,7 @@ import * as React from "react";
 import Section from "./Reusables/Section";
 import IMAGES from "../assets/images/images";
 
-function Projects() {
+function Projects({ refs }) {
     return (
         <Section className={"!h-[50vh] font-gilroy text-center px-[300px] py-[50px]"}  style={{ background: `url(${IMAGES.projectBackground}) no-repeat center`, backgroundSize: "cover" }}>
             <div>
