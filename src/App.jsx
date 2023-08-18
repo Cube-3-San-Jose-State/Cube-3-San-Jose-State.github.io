@@ -31,21 +31,14 @@ const refs = { aboutRef, projectRef, javelinRef, contactsRef };
 
 export default function App() {
 
-    const [loaded, setLoaded] = React.useState(false);
-    React.useEffect(() => {
-        setLoaded(true);
-    }, [])
-
     return (
         <>
-            {loaded ? (<>
-                <Header refs={refs} />
-                <Landing />
-                <About refs={refs.aboutRef} />
-                <Projects refs={refs.projectRef} />
-                <Javelin refs={refs.javelinRef} />
-                <Footer refs={refs.contactsRef} />
-            </>) : null}
+            <Header refs={refs} />
+            <Landing />
+            <About refs={refs.aboutRef} />
+            <Projects refs={refs.projectRef} />
+            <Javelin refs={refs.javelinRef} />
+            <Footer refs={refs.contactsRef} />
         </>
-    )
+    );
 }
