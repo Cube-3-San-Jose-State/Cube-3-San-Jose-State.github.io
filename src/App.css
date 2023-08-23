@@ -9,7 +9,19 @@
         font-weight: normal;
         src: url(/src/assets/font/Gilroy-Bold.woff) format("woff");
     }
+    
+    @font-face {
+        font-family: 'Noto-Sans';
+        font-style: normal;
+        font-weight: normal;
+        src: url(/src/assets/font/NotoSans-Regular.ttf);
+    }
 }
+html {
+    margin: 0;
+    font-size: calc(1vw + .2rem);
+}
+
 body {
     --background-black: #121212;
     --club-yellow: #E5A823;

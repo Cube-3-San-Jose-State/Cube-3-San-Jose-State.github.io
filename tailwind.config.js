@@ -21,7 +21,8 @@ module.exports = {
                 }
             }),
             fontFamily: {
-                "gilroy": ["Gilroy-Bold"]
+                "gilroy": ["Gilroy-Bold"],
+                "noto": ["Noto-Sans"]
             },
             colors: {
                 "club-yellow": "#E5A823",

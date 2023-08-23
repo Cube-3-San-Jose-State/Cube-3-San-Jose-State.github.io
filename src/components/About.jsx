@@ -4,19 +4,20 @@ import IMAGES from "../assets/images/images";
 
 function About(props, ref) {
     return (
-        <Section className={"h-[50vh] font-gilroy text-center"} style={{ background: `url(${IMAGES.aboutBackground}) no-repeat center`, backgroundSize: "cover" }} ref={ref}>
-            <div className="w-[55vw]">
-                <h1 className="text-[70px] text-[var(--club-yellow)]">
-                    about cube<sup className="text-[35px]">3</sup>
+        <Section className={"h-[50vh] font-noto text-center"} style={{ background: `url(${IMAGES.aboutBackground}) no-repeat center`, backgroundSize: "cover" }} ref={ref}>
+            <div className="w-[55vw] text-[white]">
+                <h1 className=" font-gilroy text-5xl text-[var(--club-yellow)] mb-[1rem]">
+                    about cube<sup>3</sup>
                 </h1>
-                <p className="text-[20px] text-[white]">
-                    Cube<sup className="text-[10px]">3</sup> is a student-ran cubesat and small spacecraft development club
+                <p>
+                    Cube<sup>3</sup> is a student-ran cubesat and small spacecraft development club
                     at San Jose State University. We aim to provide students with hands-on
                     experience developing our projects within three subteams: Mechanical, Electrical, and Controls.
-
                 </p>
-                <hr className="h-[10px] invisible" />
-                <p className="text-[20px] text-[white]">
+
+                <hr className="h-[3vh] invisible" />
+
+                <p>
                     We welcome members from all experience levels, majors, and goals,
                     with the goal of creating an environment that allows for any ideas to be
                     explored to its fullest potential.
