@@ -10,11 +10,15 @@ function Projects(props, ref) {
                     projects
                 </h1>
                 <p className="font-noto">
-                    Explore a realm of limitless possibilities with SJSU Cube3 projects. Venture into the universe of miniature satellites
-                    as we develop a CanSat alongside new members. Witness the magic as this compact marvel undertakes a myriad of tasks during
-                    its descent from great heights - from deploying a heatshield to capturing video footage and landing gracefully, all
-                    within the dimensions of a soda can. Alternatively, immerse yourself in the Nodes Project, crafting a sensor network
-                    that observes volcanic activity near Popocatépetl.
+                    Our projects are entirely student led, with students being able to experience each phase of a 
+                    typical spacecraft development cycle. Past projects range from volcano monitoring nodes, to 
+                    beginner friendly cansats.
+                    
+                    <hr className="h-[3vh] invisible" />
+
+                    Our tight knit group of less than 15 students ensure that each voice is heard, and each 
+                    contribution is noticed. Ultimately, members come away with valuable experience under their belt, 
+                    and meaningful relationships with experienced students with internships at NASA, Maxar, MOOG, and more.
                 </p>
             </div>
         </Section>
