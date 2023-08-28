@@ -9,8 +9,15 @@ function Javelin(props, ref) {
                 <img className="h-[30vh]" src={IMAGES.javelinLogo} alt="Javelin logo" />
                 <div className='text-5xl font-gilroy text-white leading-tight'>JAVELIN</div>
             </div>
-            <div className='w-1/2 text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente mollitia animi, libero sequi ipsa voluptatem eius aliquam quidem repudiandae ratione ipsam sed porro soluta recusandae asperiores, dolorum quis dolor totam?</div>
-            <div className='w-3/4 h-[30%] bg-gray-500 text-center text-6xl'>timeline here</div>
+            <div className='w-1/2 text-white'>
+                Project JAVELIN is a can-satellite that will be launched via our self-developed high power rocket. 
+                It will be deployed from ~2000 feet and transmit flight data to our ground control in real time.
+                
+                <hr className="h-[3vh] invisible"/>
+                
+                The can-satellite will be the culmination of knowledge and work from our controls, electrical, mechanical, and 
+                rocketry sub-teams, over three semesters.
+            </div>
         </Section>
     );
 }
