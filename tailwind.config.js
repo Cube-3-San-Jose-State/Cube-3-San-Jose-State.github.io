@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
     content: [
         "./src/**/*.{html,js,jsx,ts,tsx}",
@@ -44,6 +45,8 @@ module.exports = {
     variants: {
         animation: ["motion-safe"],
     },
-    plugins: [],
+    plugins: [
+        require("postcss-100vh-fix")
+    ],
 };
 

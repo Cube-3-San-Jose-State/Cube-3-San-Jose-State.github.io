@@ -5,8 +5,8 @@ import IMAGES from "../assets/images/images";
 function About(props, ref) {
     return (
         <Section className={"h-[50vh] font-noto text-center"} style={{ background: `url(${IMAGES.aboutBackground}) no-repeat center`, backgroundSize: "cover" }} ref={ref}>
-            <div className="w-[55vw] text-[white]">
-                <h1 className=" font-gilroy text-5xl text-[var(--club-yellow)] mb-[1rem]">
+            <div className="w-[55vw]  sm:max-lg:w-[75vw] text-[white] sm:max-lg:text-4xl">
+                <h1 className=" font-gilroy text-5xl sm:max-lg:text-8xl text-[var(--club-yellow)] mb-[1rem]">
                     about cube<sup>3</sup>
                 </h1>
                 <p>

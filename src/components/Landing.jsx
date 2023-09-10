@@ -78,10 +78,10 @@ function Landing() {
     };
 
     return (
-        <Section className="h-screen">
+        <Section className="supports-[height:100cqh]:h-[100cqh] supports-[height:100svh]:h-[100svh]"> {/* This is to handle iOS 100vh issue */}
             <img src={IMAGES.landingBackground} className="w-2/5 z-1 absolute right-0 bottom-0 animate-fade pointer-events-none select-none" alt="" />
             <Particles className="w-full h-full" init={particlesInit} options={particlesOptions} />
-            <h1 className="font-gilroy text-6xl text-[var(--club-yellow)] leading-tight left-[7vw] absolute animate-fade">
+            <h1 className="font-gilroy text-6xl sm:max-lg:text-8xl text-[var(--club-yellow)] leading-tight left-[7vw] absolute animate-fade">
                 cube satellites <br />
                 & small spacecrafts <br />
                 @ san jose state
