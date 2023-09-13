@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./components/Header";
+import Recruiting from "./components/Temporary/Recruiting";
 import Landing from "./components/Landing";
 import About from "./components/About";
 import Projects from "./components/Projects";
@@ -11,6 +12,7 @@ import "./App.css";
     ---- transparent fixed 10 vh header
     | 100 vh landing page
     ---------------------
+    
     | 50 vh about cube3, about, member counts
     | 50 vh header for projects, include past project
     ---------------------
@@ -34,6 +36,7 @@ function App() {
         <>
             <Header refs={refs} />
             <Landing />
+            <Recruiting/>
             <About ref={aboutRef} />
             <Projects ref={projectRef} />
             <Javelin ref={javelinRef} />

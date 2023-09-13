@@ -4,7 +4,7 @@ import IMAGES from "../assets/images/images";
 
 function Javelin(props, ref) {
     return (
-        <Section className="h-screen font-noto flex-col text-center gap-7" style={{ background: `url(${IMAGES.javelinBackground}) no-repeat center`, backgroundSize: "cover" }} ref={ref}>
+        <Section className="h-screen font-noto flex-col text-center gap-7" style={{ background: `url(${IMAGES.javelinPrint}) no-repeat center`, backgroundSize: "cover" }} ref={ref}>
             <div className="flex flex-col justify-center items-center">
                 <img className="w-1/2" src={IMAGES.javelinLogo} alt="Javelin logo" />
                 <div className='text-5xl sm:max-lg:text-8xl font-gilroy text-white leading-tight'>JAVELIN</div>
