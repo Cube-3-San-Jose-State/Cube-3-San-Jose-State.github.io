@@ -23,7 +23,7 @@ function Recruiting(props, ref) {
                     <hr className="h-[3vh] invisible" />
 
                     We will be recruiting till mid-October. To get involved, fill out our&nbsp;
-                    <a target="_blank" href="https://forms.gle/ech78ZSMZPj9hPD39" className="text-[var(--club-yellow)] underline">interest form</a>.
+                    <a target="_blank" rel="noreferrer" href="https://forms.gle/ech78ZSMZPj9hPD39" className="text-[var(--club-yellow)] underline">interest form</a>.
                 </p>
             </div>
         </Section>
